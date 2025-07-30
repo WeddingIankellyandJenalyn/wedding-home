@@ -16,13 +16,16 @@
         
         h1, h2, h3, h4, .playfair {
             font-family: 'Playfair Display', serif;
+			
         }
+
+
         
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.postimg.cc/ZKsmmLhY/1753700391189.jpg');
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            height: 120vh;
         }
         
         .animate-fade-in {
@@ -54,8 +57,8 @@
         }
         
         .gallery-item:hover {
-            transform: scale(1.03);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transform: scale(1.08);
+            box-shadow: 0 50px 25px rgba(0, 0, 0, 0.2);
         }
         
         @keyframes fadeIn {
@@ -131,6 +134,7 @@
                     <a href="#home" class="text-white hover:text-gold-300 transition">Home</a>
                     <a href="#details" class="text-white hover:text-gold-300 transition">Details</a>
                     <a href="#gallery" class="text-white hover:text-gold-300 transition">Gallery</a>
+		
                   
                 </div>
                 <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
@@ -145,22 +149,26 @@
                 <a href="#home" class="text-white hover:text-gold-300 transition">Home</a>
                 <a href="#details" class="text-white hover:text-gold-300 transition">Details</a>
                 <a href="#gallery" class="text-white hover:text-gold-300 transition">Gallery</a>
+		
                 
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero flex items-center justify-center text-center relative overflow-hidden" id="home">
+    <section class=" hero flex items-center justify-center text-center relative overflow-hidden" id="home">
         <div class="container mx-auto px-6 z-10">
             <div class="animate-fade-in">
                 <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 playfair animate-slide-up">IAN KELLY & JENALYN</h1>
 		    <p class="text-xl md:text-2xl text-white mb-8 animate-slide-up" style="animation-delay: 0.2s;">September 12, 2025</p>
-                <div class="w-24 h-1 bg-white mx-auto mb-6"></div>
+                <div class="w-40 h-1 bg-white mx-auto mb-6"></div>
                 
                 <div class="animate-slide-up" style="animation-delay: 0.4s;">
-                    <a href="https://weddingiankellyandjenalyn.github.io/Wedding-Invitation/" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition duration-300">Open</a>
-                </div>
+                    <a href="#" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition duration-300">Soon Wedding Video</a>
+<p class="text-xl md:text-2xl text-white mb-8 animate-slide-up" style="animation-delay: 0.2s;"> </p>
+<p class="text-xl md:text-2xl text-white mb-8 animate-slide-up" style="animation-delay: 0.2s;">Welcome</p>
+<p class="text-xl md:text-2xl text-white mb-8 animate-slide-up" style="animation-delay: 0.2s;">Please scroll down for more details</p>
+				</div>
             </div>
         </div>
         </div>
@@ -182,15 +190,23 @@
         </div>
         
         <!-- Scroll Down Indicator -->
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <a href="#about" class="text-white">
+       
+    </section>
+
+    <div class="absolute bottom-10 right-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#details" class="text-white">
                 <i class="fas fa-chevron-down text-2xl"></i>
             </a>
         </div>
-    </section>
 
-    <!-- Countdown Section -->
-    <section class="py-16 bg-pink-50">
+    
+
+    <!-- Wedding Details Section -->
+	
+    <section class="py-20 bg-green-50" id="details">
+	
+        <div class="container mx-auto px-6"><!-- Countdown Section -->
+    <section class="py-16 bg-green-50">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 playfair">Counting Down to Our Special Day</h2>
             <div class="flex justify-center space-x-4 md:space-x-8">
@@ -213,32 +229,30 @@
             </div>
         </div>
     </section>
-
-    
-
-    <!-- Wedding Details Section -->
-    <section class="py-20 bg-pink-50" id="details">
-        <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 playfair">Wedding Details</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-lg shadow-md text-center animate-slide-up">
-                    <div class="text-4xl text-pink-400 mb-4">
+                    <div class="text-4xl text-gray-800 mb-4">
                         <i class="fas fa-church"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4 playfair">Ceremony</h3>
                     <p class="text-gray-600 mb-2">St.Dominic Parish Church</p>
-                    <p class="text-gray-600 mb-2">Santo Domingo, Nueva Ecija, 3133</p>
-                    
+                    <p class="text-gray-600 mb-2">Poblacion, Santo Domingo</p>
+                    <p class="text-gray-600 mb-4">Nueva Ecija, 3133</p>
                     <p class="text-pink-500 font-medium">9:30 AM, September 12, 2025</p>
 					<img id="logo" src="https://i.postimg.cc/PfBpZ8Pq/111-logo.png" alt="Logo" width="500" height="500">
+			 <H2><p class="text-gray-600 mb-2">  </p></H2>
+					<H2><p class="text-xl md:text-2xl text-BLACK mb-8 animate-slide-up" style="animation-delay: 0.2s;">OUR PARENT</p></H2>
+					
+					
 					<p class="text-gray-600 mb-2">Mr. Jurline Nimenzo </p>
-<p class="text-gray-600 mb-2">Mrs. Julie Nimenzo</p>
+<p class="text-gray-600 mb-2">Mrs. Julie Nimenzo</p><center><img id="logo" src="https://i.postimg.cc/kMfxsrq1/1-qr-church.png" alt="Logo" width="200" height="200"></center>
 
                 </div>
                 
                 <div class="bg-white p-8 rounded-lg shadow-md text-center animate-slide-up" style="animation-delay: 0.2s;">
-                    <div class="text-4xl text-pink-400 mb-4">
+                    <div class="text-4xl text-gray-800 mb-4">
                        <img src="https://i.postimg.cc/43Y2zFy8/1752675703318.jpg" alt="James" class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl font-bold mb-4 playfair"></h3>
@@ -252,55 +266,69 @@
                 </div>
                 
                 <div class="bg-white p-8 rounded-lg shadow-md text-center animate-slide-up" style="animation-delay: 0.4s;">
-                    <div class="text-4xl text-pink-400 mb-4">
+                    <div class="text-4xl text-gray-800 mb-4">
                          <i class="fas fa-glass-cheers"></i>
                     </div>
                      <h3 class="text-xl font-bold mb-4 playfair">Reception</h3>
                     <p class="text-gray-600 mb-2">Cottage Farm Resort</p>
-                    <p class="text-gray-600 mb-2">Brgy,San Agustin, Santo Domingo,</p>
+                    <p class="text-gray-600 mb-2">Brgy,San Agustin, Santo Domingo</p>
                     <p class="text-gray-600 mb-4">Nueva Ecija, 3133</p>
                      <p class="text-pink-500 font-medium">At 11:30 AM After Ceremony</p>
 					 <img id="logo" src="https://i.postimg.cc/PfBpZ8Pq/111-logo.png" alt="Logo" width="8000" height="5000">
+					 <H2><p class="text-gray-600 mb-2">  </p></H2>
+			
+					 
+					  <H2><p class="text-xl md:text-2xl text-BLACK mb-8 animate-slide-up" style="animation-delay: 0.2s;">OUR PARENT</p></H2>
 					 <p class="text-gray-600 mb-2">Mr. Eulogio Ramos </p>
-<p class="text-gray-600 mb-2">Mrs. Brigida Ramos</p>
+<p class="text-gray-600 mb-2">Mrs. Brigida Ramos</p><center><img id="logo" src="https://i.postimg.cc/44L9tzQj/Wedding-reception.png" alt="Logo" width="200" height="200"></center>
+
                 </div>
             </div>
             
-            
+    
         </div>
+		
+		 <div class="bg-white p-8 rounded-lg shadow-md text-center animate-slide-up" style="animation-delay: 0.4s;">
+                          <center><img id="logo" src="https://i.postimg.cc/fTDnmrMR/sponsor.png" alt="Logo" width="100" height="100"></center>
+                     
+						  <h3 class="text-xl font-bold mb-4 playfair">Principal Sponsor, Secondary Sponsor and The Bearers</h3>
+						 <h3 class="text-xl font-bold mb-4 playfair">Please wait for loading image</h3>
+						 <center><img id="logo" src="https://i.ibb.co/nq1dRX7t/3.jpg" alt="Logo" width="70%" height="70%"></center>
+                    </div>
     </section>
 
     <!-- Gallery Section -->
     <section class="py-20 bg-white" id="gallery">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 playfair">Our Gallery</h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                <div class="gallery-item overflow-hidden rounded-lg shadow-md ">
+                    <img src="https://i.postimg.cc/PJcS3JBH/1753700703134.jpg" alt="Engagement Photo" class="w-full h-[30rem] object-cover transition duration-500 hover:scale-110  ">
+                
+				</div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Engagement Photo" class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                    <img src="https://i.postimg.cc/ZRrG91DZ/12.jpg" alt="Beach Vacation" class="w-full h-[30rem] object-cover transition duration-500 hover:scale-110">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://i.postimg.cc/9F2kvpgM/3.jpg" alt="Beach Vacation" class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                    <img src="https://i.postimg.cc/ZYG7d7zD/1753700457066.jpg" alt="Winter Getaway" class="w-full h-[30rem] object-cover transition duration-500 hover:scale-110">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Winter Getaway" class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Date Night" class="w-full h-[21.25rem] object-cover transition duration-500 hover:scale-110">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Date Night" class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Proposal" class="w-full h-[21.25rem] object-cover transition duration-500 hover:scale-110">
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Proposal" class="w-full h-64 object-cover transition duration-500 hover:scale-110">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Celebration" class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                    <img src="https://i.pinimg.com/736x/4b/54/0c/4b540ce5aea6b05d2d60701d441e7002.jpg" alt="Celebration" class="w-full h-[21.25rem] object-cover transition duration-500 hover:scale-110">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- RSVP Section -->
-    <section class="py-20 parallax bg-pink-50" id="rsvp" style="background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
-   
+    <section class="py-60 parallax bg-pink-50 mx-auto " id="rsvp" style="background-image: url('https://i.postimg.cc/fTyLYyzL/1753700174817.jpg');">
+  
     </section>
 
     <!-- Footer -->
