@@ -452,7 +452,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-sage-800">Wedding Attire</h2>
             <div class="flex flex-col md:flex-row gap-12 items-center">
                 <div class="md:w-1/2">
-                    <img src="https://i.postimg.cc/zBCKyKTS/viber-image-2025-08-02-12-42-44-990-Recovered.png" 
+                    <img src="https://i.postimg.cc/jqwHPX1s/viber-image-2025-08-02-12-42-44-990-Recovered.jpg" 
                          alt="Wedding attire inspiration" 
                          class="rounded-lg shadow-xl w-full h-auto">
                 </div>
@@ -642,12 +642,14 @@
 
 
 <script>
+       
         function openDesktopView() {
-            const desktopURL = "https://weddingiankellyandjenalyn.github.io/wedding-home/";
-            const newTab = window.open(desktopURL, "_blank");
-            if (newTab) newTab.focus();
+            const newTab = window.open("https://weddingiankellyandjenalyn.github.io/wedding-home/", "_blank");
+            if (newTab) {
+                newTab.focus(); // Bring the new tab to front if popup blockers allow it
+            }
         }
-
+    
         function openMobileView() {
             const mobileURL = "https://weddingiankellyandjenalyn.github.io/wedding-home/";
             const newTab = window.open(mobileURL, "_blank");
